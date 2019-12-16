@@ -23,29 +23,29 @@
 
 1. git파일 설치 : 모든 설정 기본값으로 설정한다. 
 
-```java
-// 1. 깃 버전 확인
+```shell
+# 1. 깃 버전 확인
 $ git --version
 git version 2.24.1.windows.2
     
-// 2. ~디렉토리 내 TIL 폴더 생성 후 폴더 리스트 확인 
+# 2. ~디렉토리 내 TIL 폴더 생성 후 폴더 리스트 확인 
 $ mkdir TIL
 $ ls
 
-// 3. TIL 폴더로 이동 후 git폴더로 지정
+# 3. TIL 폴더로 이동 후 git폴더로 지정
 $ cd TIL
 $ git init 
 > 폴더 안에 git으로 관리를 시작 할 때 .git파일을 만든다. 
 
-// 4. .git(숨긴파일로 생성) 파일 확인 후 깃 상태 체크 
+# 4. .git(숨긴파일로 생성) 파일 확인 후 깃 상태 체크 
 $ ls -a    
 $ git status
-    
-// 5. 연습파일 생성 & 삭제하기 
+
+# 5. 연습파일 생성 & 삭제하기 
 $ touch [파일명] // $ git status 확인 시 붉은색 파일로 확인됨 
 $ rm [파일명]
     
-// 6. .md파일 깃허브 올리기 : typora에서 작성했던 .md파일 TIL 폴더에 옮긴다. 
+# 6. .md파일 깃허브 올리기 : typora에서 작성했던 .md파일 TIL 폴더에 옮긴다. 
     
 ```
 
@@ -71,9 +71,9 @@ $ git commit 이전에 global user.name, email 입력
 
 반드시 무엇을 했는지 m를 남기면서 commit
 
+랴
 
-
-``` python
+``` shell
 # 7. git에게 add명령 실행
 $ git add [파일명] # $ git status 확인하면 [파일명] : 녹색으로 변화
 
@@ -119,8 +119,6 @@ $ git checkout master
 Previous HEAD position was 263066a first commit
 Switched to branch 'master'
 > ls 확인 결과 두 개의 파일 확인 됨 
-
-
 ```
 
 
@@ -149,7 +147,7 @@ git hub에 저장소 생성 :  new repository > name만 지정 후 저장한다
 
 $ git remote add origin  https://github.com/zzomill/TIL.git
 
-```python
+```shell
 # 12. 원격 저장소 생성
 > 깃허브 > new repository 생성 후 저장
 
