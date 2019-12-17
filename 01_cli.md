@@ -74,7 +74,7 @@ $ git commit 이전에 global user.name, email 입력
 랴
 
 ``` shell
-# 7. git에게 add명령 실행
+# 7. git폴더 내 add명령 실행
 $ git add [파일명] # $ git status 확인하면 [파일명] : 녹색으로 변화
 
 # 8. 최초 commit 하기 (최초 아니면 #9.으로 뛰어넘기)
@@ -86,7 +86,7 @@ Run
 
   git config --global user.email "you@example.com"
   git config --global user.name "Your Name"
->> user.email user.name을 지정한다. 
+>> user.email과 user.name을 지정한다. 
 
 # 8-2 최초 commit 시, 전역으로 허용되는 email, name config (설정)
 $ git config -global user.email "[이메일 주소 입력]"
@@ -135,9 +135,9 @@ Switched to branch 'master'
 
 ## 2-1 저장소 위치 
 
-git hub에 저장소 생성 :  new repository > name만 지정 후 저장한다
+git hub 사이트에서 repository 생성 :  new repository > name만 지정 후 생성한다
 
-코드 올리는 방법: https://github.com/zzomill/TIL.git  > http주소 복사 후 clm으로 깃에 명령한다. 
+코드 올리기 : https://github.com/zzomill/TIL.git  > http주소 복사 후 clm으로 깃에 명령한다. 
 
 
 
@@ -151,8 +151,9 @@ $ git remote add origin  https://github.com/zzomill/TIL.git
 # 12. 원격 저장소 생성
 > 깃허브 > new repository 생성 후 저장
 
-# 13. 원격저장소 접속
-$ git remote add origin[new repository에 생성된 원격저장소 주소]
+# 13. 원격저장소 최초 접속
+(주의 이미 한 번 접속된 저장소에 다시 remote하게되면 add, commit한 설정이 없어진다.)
+$ git remote add origin[new repository에서 생성된 원격저장소 주소]
 > 입력 : $ git remote add origin  https://github.com/zzomill/TIL.git
 > origin : 원격저장소 별명 
     

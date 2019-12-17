@@ -40,7 +40,7 @@ $ git commit -m "커밋 메세지"
 
 
 
-### (4) 원경 저장소 정보 추가 : `git remote`
+### (4) 원격 저장소 정보 추가 : `git remote`
 
 - Github 원격(remote) 저장소(repository)를 생성하고 `TIL`폴더와 연결한다. 
 - 새로운 원격 저장소가 추가될 때만 입력한다. 
