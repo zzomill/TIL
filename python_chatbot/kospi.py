@@ -15,4 +15,4 @@ soup = BeautifulSoup(request, 'html.parser')
 
 # html에서 가져오려는 값의 select로 복사 
 kospi = soup.select_one("#KOSPI_now")
-print(kospi)
+print(kospi.text)
